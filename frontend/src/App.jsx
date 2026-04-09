@@ -7,7 +7,7 @@ function App() {
 
   // 백엔드에서 데이터 가져오기
   const fetchTodos = async () => {
-    const res = await axios.get('http://localhost:5000/api/todos')
+    const res = await axios.get('/api/todos')
     setTodos(res.data)
   }
 
